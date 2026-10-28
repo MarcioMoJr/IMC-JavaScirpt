@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de exercicio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calcula IMC</h1>
+    </header>
+    <section>
+        <div>
+            <p>Digite o seu nome:
+                <input type="text" id="txtnome">
+            </p>
+            <p>Digite o seu peso atual em kg:
+                <input type="number" id="txtpeso">
+            </p>
+            <p>Digite a sua altura em metros:
+                <input type="number" id="txtaltura">
+            </p>
+            <p>
+                <input type="button" value="Calcular" onclick="calcular()">
+            </p>
+        </div>
+        <div id="res">
+            <!-- Aqui vai aparecer o resultado -->
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
