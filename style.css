@@ -1,6 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background: rgb(83, 176, 219);
+    background: rgb(15, 48, 87);
     font: normal 18pt Arial;
+    margin: 0;
+    padding: 40px 15px;
 }
 
 header {
@@ -8,11 +14,90 @@ header {
     text-align: center;
 }
 
+header h1 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 40pt;
+    margin: 0 0 10px;
+}
+
+header p {
+    font-size: 16pt;
+    margin: 0 0 35px;
+}
+
 section {
     background: white;
-    border-radius: 10px;
-    padding: 15px;
-    width: 500px;
+    border-radius: 15px;
+    padding: 40px 35px;
+    width: 560px;
+    max-width: 100%;
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+    text-align: center;
 }
+
+p {
+    margin: 22px 0;
+}
+
+i {
+    display: inline-block;
+    width: 35px;
+    text-align: center;
+    color: rgb(42, 139, 208);
+}
+
+label {
+    display: inline-block;
+    width: 130px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="number"] {
+    font: normal 18pt Arial;
+    padding: 10px 12px;
+    border: 2px solid rgb(156, 203, 232);
+    border-radius: 8px;
+    width: 280px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: rgb(42, 139, 208);
+    outline: none;
+}
+
+input[type="button"] {
+    font: normal 18pt Arial;
+    color: white;
+    background: rgb(42, 139, 208);
+    border: none;
+    border-radius: 8px;
+    padding: 14px;
+    width: 300px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+input[type="button"]:hover {
+    background: rgb(20, 96, 154);
+}
+
+#res {
+    background: rgb(234, 244, 251);
+    border-radius: 12px;
+    padding: 5px 15px;
+    margin-top: 30px;
+}
+
+#res p {
+    margin: 12px 0;
+}
+
+.abaixo { color: rgb(106, 61, 181); }
+.normal { color: rgb(46, 139, 87); }
+.excesso { color: rgb(217, 130, 0); }
+.obesidade1 { color: rgb(217, 84, 30); }
+.obesidade2 { color: rgb(198, 40, 40); }
+.obesidade3 { color: rgb(123, 30, 58); }

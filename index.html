@@ -3,32 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de exercicio</title>
+    <title>Calculadora de IMC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cf288ba9ca.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <h1>Calcula IMC</h1>
+        <h1>Calculadora de IMC</h1>
+        <p>Descubra seu índice de massa corporal</p>
     </header>
+
     <section>
         <div>
-            <p>Digite o seu nome:
-                <input type="text" id="txtnome">
-            </p>
-            <p>Digite o seu peso atual em kg:
-                <input type="number" id="txtpeso">
-            </p>
-            <p>Digite a sua altura em metros:
-                <input type="number" id="txtaltura">
+            <p>
+                <i class="fa-solid fa-user"></i>
+                <label for="txtnome">Nome:</label>
+                <input type="text" id="txtnome" placeholder="Seu nome">
             </p>
             <p>
-                <input type="button" value="Calcular" onclick="calcular()">
+                <i class="fa-solid fa-weight-hanging"></i>
+                <label for="txtpeso">Peso (kg):</label>
+                <input type="number" id="txtpeso" placeholder="70">
+            </p>
+            <p>
+                <i class="fa-solid fa-ruler"></i>
+                <label for="txtaltura">Altura (m):</label>
+                <input type="number" id="txtaltura" placeholder="1.70">
+            </p>
+            <p>
+                <input type="button" value="Calcular IMC" onclick="calcular()">
             </p>
         </div>
-        <div id="res">
-            <!-- Aqui vai aparecer o resultado -->
+
+        <div id="res" hidden>
+            <p id="periodoDia"></p>
+            <p>Seu Índice de Massa Corporal é <b id="imc"></b></p>
+            <p>Classificação: <b id="classificacao"></b></p>
         </div>
+
     </section>
+
     <script src="script.js"></script>
 </body>
 </html>
